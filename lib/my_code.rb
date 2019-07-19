@@ -31,12 +31,16 @@ def reduce_to_total(source_array, starting_point)
   return value
 end 
 
-def reduce_to_total(source_array)
-  
-  return source_array
+def reduce_to_all_true(source_array)
+  source_array.length.times {|n|
+    if source_array[n] != true
+      return false
+    else 
+      return true
+  }
 end 
 
-def reduce_to_total(source_array)
+def reduce_to_any_true(source_array)
   
   return source_array
 end 
